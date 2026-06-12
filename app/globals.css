@@ -12,4 +12,28 @@ h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
 }
 
+/* Marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+/* CTA button hover */
+.cta-btn { background-color: #d94f1e; transition: background-color 0.15s; }
+.cta-btn:hover { background-color: #b8401a; }
+
+/* Card hover lift */
+.hover-card { transition: transform 0.2s, box-shadow 0.2s; }
+.hover-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(26,48,80,0.10); }
+
+/* FAQ accordion */
+details > summary { list-style: none; }
 details summary::-webkit-details-marker { display: none; }
+details:not([open]) .faq-icon::after { content: '+'; }
+details[open] .faq-icon::after { content: '×'; }

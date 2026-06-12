@@ -1,3 +1,6 @@
+import Marquee from '@/components/Marquee';
+import FAQAccordion from '@/components/FAQAccordion';
+
 export const metadata = {
   title: 'Pet Clinic in Sector 79 Gurugram | TruVet Pet Care Clinic',
   description:
@@ -33,161 +36,56 @@ const jsonLd = {
         {
           '@type': 'Question',
           name: 'Is there a vet clinic near Sector 79 Gurugram?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. TruVet Pet Care Clinic is at Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Gurugram. Open all 7 days from 10am to 8pm. Dr. Brajmadhuri offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats.',
-          },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. TruVet Pet Care Clinic is at Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Gurugram. Open all 7 days from 10am to 8pm. Dr. Brajmadhuri offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats.' },
         },
         {
           '@type': 'Question',
           name: 'Are you open on Sundays?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. TruVet Pet Care Clinic is open every day including Sundays and public holidays, from 10am to 8pm. Walk-in OPD consultations are welcome.',
-          },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. TruVet Pet Care Clinic is open every day including Sundays and public holidays, from 10am to 8pm. Walk-in OPD consultations are welcome.' },
         },
         {
           '@type': 'Question',
           name: 'Will I always see the same doctor?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. Dr. Brajmadhuri is the only consulting doctor at TruVet and sees every patient personally. There are no junior vets and no rotating staff at TruVet.',
-          },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. Dr. Brajmadhuri is the only consulting doctor at TruVet and sees every patient personally. There are no junior vets and no rotating staff at TruVet.' },
         },
         {
           '@type': 'Question',
           name: 'Do you treat both dogs and cats?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. TruVet treats dogs and cats. Services include vaccination, deworming, OPD consultation, surgery and health checkups for both.',
-          },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. TruVet treats dogs and cats. Services include vaccination, deworming, OPD consultation, surgery and health checkups for both.' },
         },
         {
           '@type': 'Question',
           name: 'How do I book an appointment?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Send a WhatsApp message to +91 98710 10355. Walk-in OPD consultations are also welcome during clinic hours, 10am to 8pm, all 7 days.',
-          },
+          acceptedAnswer: { '@type': 'Answer', text: 'Send a WhatsApp message to +91 98710 10355. Walk-in OPD consultations are also welcome during clinic hours, 10am to 8pm, all 7 days.' },
         },
         {
           '@type': 'Question',
           name: 'Where exactly is TruVet Pet Care Clinic?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. Near Godrej Nature Plus, accessible from Sectors 80, 81, 82, 83, 85 and 88.',
-          },
+          acceptedAnswer: { '@type': 'Answer', text: 'Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. Near Godrej Nature Plus, accessible from Sectors 80, 81, 82, 83, 85 and 88.' },
         },
       ],
     },
   ],
 };
 
-const marqueeItems = [
-  'Licensed Veterinary Clinic',
-  'Monday to Sunday, 10AM to 8PM',
-  'Dogs and Cats Primary',
-  'Sector 79, Gurugram',
-  'Same Doctor Every Visit',
-  'In-Clinic Pet Food and Accessories',
-];
-
 const services = [
-  {
-    icon: '🩺',
-    title: 'OPD Consultation',
-    body: 'Walk-in consultations for dogs and cats. Dr. Brajmadhuri sees every patient personally and explains everything before acting.',
-    accent: '#b7d9ee',
-  },
-  {
-    icon: '💉',
-    title: 'Dog Vaccination',
-    body: 'Complete vaccination schedules for puppies and adult dogs including core and non-core vaccines as recommended.',
-    accent: 'rgba(217,79,30,0.10)',
-  },
-  {
-    icon: '💉',
-    title: 'Cat Vaccination',
-    body: 'Kitten and adult cat vaccination including all core feline vaccines and annual boosters.',
-    accent: '#fdf0e8',
-  },
-  {
-    icon: '🐕',
-    title: 'Dog Deworming',
-    body: 'Routine deworming for puppies and adult dogs. Quick visits, no unnecessary procedures.',
-    accent: 'rgba(26,48,80,0.07)',
-  },
-  {
-    icon: '🐈',
-    title: 'Cat Deworming',
-    body: 'Safe, effective deworming for kittens and adult cats at every life stage.',
-    accent: '#b7d9ee',
-  },
-  {
-    icon: '🏥',
-    title: 'Surgery and Procedures',
-    body: 'Soft tissue surgery, cat spay and neuter, and minor procedures. All conducted by Dr. Brajmadhuri.',
-    accent: 'rgba(217,79,30,0.10)',
-  },
-  {
-    icon: '🔬',
-    title: 'Dog Health Checkup',
-    body: 'Annual wellness exams to catch problems early and keep your dog healthy year-round.',
-    accent: '#fdf0e8',
-  },
-  {
-    icon: '🔬',
-    title: 'Cat Health Checkup',
-    body: 'Comprehensive health checkups for cats. Early detection, honest advice, no unnecessary tests.',
-    accent: 'rgba(26,48,80,0.07)',
-  },
+  { icon: '🩺', title: 'OPD Consultation', body: 'Walk-in consultations for dogs and cats. Dr. Brajmadhuri sees every patient personally and explains everything before acting.', accent: '#b7d9ee' },
+  { icon: '💉', title: 'Dog Vaccination', body: 'Complete vaccination schedules for puppies and adult dogs including core and non-core vaccines as recommended.', accent: 'rgba(217,79,30,0.10)' },
+  { icon: '💉', title: 'Cat Vaccination', body: 'Kitten and adult cat vaccination including all core feline vaccines and annual boosters.', accent: '#fdf0e8' },
+  { icon: '🐕', title: 'Dog Deworming', body: 'Routine deworming for puppies and adult dogs. Quick visits, no unnecessary procedures.', accent: 'rgba(26,48,80,0.07)' },
+  { icon: '🐈', title: 'Cat Deworming', body: 'Safe, effective deworming for kittens and adult cats at every life stage.', accent: '#b7d9ee' },
+  { icon: '🏥', title: 'Surgery and Procedures', body: 'Soft tissue surgery, cat spay and neuter, and minor procedures. All conducted by Dr. Brajmadhuri.', accent: 'rgba(217,79,30,0.10)' },
+  { icon: '🔬', title: 'Dog Health Checkup', body: 'Annual wellness exams to catch problems early and keep your dog healthy year-round.', accent: '#fdf0e8' },
+  { icon: '🔬', title: 'Cat Health Checkup', body: 'Comprehensive health checkups for cats. Early detection, honest advice, no unnecessary tests.', accent: 'rgba(26,48,80,0.07)' },
 ];
 
 const whyCards = [
-  {
-    title: 'Always Dr. Brajmadhuri',
-    body: 'Every consultation at TruVet is conducted personally by Dr. Brajmadhuri. There are no junior vets and no rotating staff. Your pet sees the same trusted doctor on every visit.',
-  },
-  {
-    title: 'Open Every Day',
-    body: 'TruVet is open all 7 days including Sundays and public holidays, 10am to 8pm. Because pets do not get sick on a schedule.',
-  },
-  {
-    title: 'Honest, Transparent Care',
-    body: 'A clean, hygienic facility with fair pricing and no hidden fees. We explain before we act and recommend only what your pet actually needs.',
-  },
-];
-
-const faqs = [
-  {
-    q: 'Is there a vet clinic near Sector 79 Gurugram?',
-    a: 'Yes. TruVet Pet Care Clinic is at Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Gurugram. Open all 7 days from 10am to 8pm. Dr. Brajmadhuri offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats.',
-  },
-  {
-    q: 'Are you open on Sundays?',
-    a: 'Yes. TruVet Pet Care Clinic is open every day including Sundays and public holidays, from 10am to 8pm. Walk-in OPD consultations are welcome.',
-  },
-  {
-    q: 'Will I always see the same doctor?',
-    a: 'Yes. Dr. Brajmadhuri is the only consulting doctor at TruVet and sees every patient personally. There are no junior vets and no rotating staff at TruVet.',
-  },
-  {
-    q: 'Do you treat both dogs and cats?',
-    a: 'Yes. TruVet treats dogs and cats. Services include vaccination, deworming, OPD consultation, surgery and health checkups for both.',
-  },
-  {
-    q: 'How do I book an appointment?',
-    a: 'Send a WhatsApp message to +91 98710 10355. Walk-in OPD consultations are also welcome during clinic hours, 10am to 8pm, all 7 days.',
-  },
-  {
-    q: 'Where exactly is TruVet Pet Care Clinic?',
-    a: 'Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. Near Godrej Nature Plus, accessible from Sectors 80, 81, 82, 83, 85 and 88.',
-  },
+  { title: 'Always Dr. Brajmadhuri', body: 'Every consultation at TruVet is conducted personally by Dr. Brajmadhuri. There are no junior vets and no rotating staff. Your pet sees the same trusted doctor on every visit.' },
+  { title: 'Open Every Day', body: 'TruVet is open all 7 days including Sundays and public holidays, 10am to 8pm. Because pets do not get sick on a schedule.' },
+  { title: 'Honest, Transparent Care', body: 'A clean, hygienic facility with fair pricing and no hidden fees. We explain before we act and recommend only what your pet actually needs.' },
 ];
 
 export default function Home() {
-  const allMarquee = [...marqueeItems, ...marqueeItems];
-
   return (
     <>
       <script
@@ -195,37 +93,12 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ── 1. MARQUEE TRUST STRIP ── */}
-      <div
-        style={{ backgroundColor: '#1a3050', color: '#b7d9ee', overflow: 'hidden' }}
-        className="py-2 text-xs font-medium tracking-wide select-none"
-      >
-        <style>{`
-          @keyframes marquee {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .marquee-track {
-            display: flex;
-            width: max-content;
-            animation: marquee 28s linear infinite;
-          }
-          .marquee-track:hover { animation-play-state: paused; }
-        `}</style>
-        <div className="marquee-track">
-          {allMarquee.map((item, i) => (
-            <span key={i} className="flex items-center shrink-0">
-              <span className="px-6">{item}</span>
-              <span style={{ color: '#b7d9ee', opacity: 0.4 }}>|</span>
-            </span>
-          ))}
-        </div>
-      </div>
+      {/* ── 1. MARQUEE ── */}
+      <Marquee />
 
       {/* ── 2. HERO ── */}
       <section className="bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24 flex flex-col md:flex-row gap-12 md:gap-16 items-center">
-          {/* Left */}
           <div className="flex-1 flex flex-col gap-6">
             <span
               className="self-start text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
@@ -233,10 +106,7 @@ export default function Home() {
             >
               Sector 79, Gurugram
             </span>
-            <h1
-              className="text-4xl md:text-5xl leading-tight"
-              style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}
-            >
+            <h1 className="text-4xl md:text-5xl leading-tight" style={{ color: '#1a3050' }}>
               {"Gurugram's neighbourhood vet for dogs and "}
               <em style={{ color: '#d94f1e', fontStyle: 'italic' }}>cats.</em>
             </h1>
@@ -248,16 +118,13 @@ export default function Home() {
                 href="https://wa.me/919871010355"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-semibold text-white transition-colors"
-                style={{ backgroundColor: '#d94f1e' }}
-                onMouseOver={e => (e.currentTarget.style.backgroundColor = '#b8401a')}
-                onMouseOut={e => (e.currentTarget.style.backgroundColor = '#d94f1e')}
+                className="cta-btn inline-flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-semibold text-white"
               >
                 Book on WhatsApp
               </a>
               <a
                 href="/services/"
-                className="inline-flex items-center justify-center px-6 py-3 rounded text-sm font-semibold transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 rounded text-sm font-semibold"
                 style={{ border: '1.5px solid rgba(26,48,80,0.18)', color: '#1a3050', backgroundColor: 'transparent' }}
               >
                 See Our Services
@@ -265,24 +132,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right: clinic card */}
           <div className="flex-1 w-full max-w-sm">
             <div
               className="rounded-xl p-6 flex flex-col gap-4"
               style={{ border: '1px solid rgba(0,0,0,0.07)', backgroundColor: '#ffffff', boxShadow: '0 4px 24px rgba(26,48,80,0.07)' }}
             >
-              {/* Open badge */}
               <div className="flex items-center gap-2">
                 <span className="relative flex h-2.5 w-2.5">
-                  <span
-                    className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-                    style={{ backgroundColor: '#22c55e' }}
-                  />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: '#22c55e' }} />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: '#22c55e' }} />
                 </span>
                 <span className="text-xs font-semibold" style={{ color: '#22c55e' }}>Open Now 10AM to 8PM</span>
               </div>
-
               <div>
                 <p className="font-semibold text-base" style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}>
                   TruVet Pet Care Clinic
@@ -292,25 +153,18 @@ export default function Home() {
                   Sector 79, Naurangpur, Gurugram 122051
                 </p>
               </div>
-
               <div className="flex flex-wrap gap-2">
                 {['Dogs', 'Cats', 'All 7 Days'].map(tag => (
-                  <span
-                    key={tag}
-                    className="text-xs font-medium px-3 py-1 rounded-full"
-                    style={{ backgroundColor: '#b7d9ee', color: '#1a3050' }}
-                  >
+                  <span key={tag} className="text-xs font-medium px-3 py-1 rounded-full" style={{ backgroundColor: '#b7d9ee', color: '#1a3050' }}>
                     {tag}
                   </span>
                 ))}
               </div>
-
               <a
                 href="https://wa.me/919871010355"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 text-center text-sm font-semibold text-white px-4 py-3 rounded transition-colors"
-                style={{ backgroundColor: '#d94f1e' }}
+                className="cta-btn mt-1 text-center text-sm font-semibold text-white px-4 py-3 rounded"
               >
                 Book on WhatsApp
               </a>
@@ -323,10 +177,7 @@ export default function Home() {
       <section style={{ backgroundColor: '#fdf0e8' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
           <div className="flex flex-col items-center text-center gap-4 mb-12">
-            <span
-              className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-              style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}
-            >
+            <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}>
               What We Offer
             </span>
             <h2 className="text-3xl md:text-4xl" style={{ color: '#1a3050' }}>
@@ -342,21 +193,10 @@ export default function Home() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className="bg-white rounded-lg p-5 flex flex-col gap-3 transition-all duration-200"
-                style={{ border: '1px solid rgba(0,0,0,0.07)', cursor: 'default' }}
-                onMouseOver={e => {
-                  e.currentTarget.style.transform = 'translateY(-3px)';
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(26,48,80,0.10)';
-                }}
-                onMouseOut={e => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = 'none';
-                }}
+                className="hover-card bg-white rounded-lg p-5 flex flex-col gap-3"
+                style={{ border: '1px solid rgba(0,0,0,0.07)' }}
               >
-                <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center text-xl"
-                  style={{ backgroundColor: s.accent }}
-                >
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center text-xl" style={{ backgroundColor: s.accent }}>
                   {s.icon}
                 </div>
                 <h3 className="text-base font-semibold" style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}>
@@ -369,11 +209,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Bottom bar */}
-          <div
-            className="mt-10 rounded-xl grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/20"
-            style={{ backgroundColor: '#1a3050' }}
-          >
+          <div className="mt-10 rounded-xl grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/20" style={{ backgroundColor: '#1a3050' }}>
             {['Fair Honest Pricing', 'Call to Know More +91 98710 10355', 'No Hidden Charges'].map((item) => (
               <div key={item} className="px-6 py-4 text-center text-sm font-semibold" style={{ color: '#b7d9ee' }}>
                 {item}
@@ -387,10 +223,7 @@ export default function Home() {
       <section className="bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
           <div className="flex flex-col items-center text-center gap-4 mb-12">
-            <span
-              className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-              style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}
-            >
+            <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}>
               Why Pet Parents Choose Us
             </span>
             <h2 className="text-3xl md:text-4xl" style={{ color: '#1a3050' }}>
@@ -406,16 +239,8 @@ export default function Home() {
             {whyCards.map((c) => (
               <div
                 key={c.title}
-                className="rounded-lg p-7 flex flex-col gap-3 transition-all duration-200"
-                style={{ border: '1px solid rgba(0,0,0,0.07)', backgroundColor: '#ffffff' }}
-                onMouseOver={e => {
-                  e.currentTarget.style.transform = 'translateY(-3px)';
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(26,48,80,0.10)';
-                }}
-                onMouseOut={e => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = 'none';
-                }}
+                className="hover-card rounded-lg p-7 flex flex-col gap-3 bg-white"
+                style={{ border: '1px solid rgba(0,0,0,0.07)' }}
               >
                 <h3 className="text-lg" style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}>
                   {c.title}
@@ -432,10 +257,7 @@ export default function Home() {
               href="https://wa.me/919871010355"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-white transition-colors"
-              style={{ backgroundColor: '#d94f1e' }}
-              onMouseOver={e => (e.currentTarget.style.backgroundColor = '#b8401a')}
-              onMouseOut={e => (e.currentTarget.style.backgroundColor = '#d94f1e')}
+              className="cta-btn inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-white"
             >
               Book on WhatsApp
             </a>
@@ -446,12 +268,8 @@ export default function Home() {
       {/* ── 5. ABOUT ── */}
       <section style={{ backgroundColor: '#fdf0e8' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20 flex flex-col md:flex-row gap-12 md:gap-16">
-          {/* Left */}
           <div className="flex-1 flex flex-col gap-5">
-            <span
-              className="self-start text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-              style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}
-            >
+            <span className="self-start text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}>
               About the Clinic
             </span>
             <h2 className="text-3xl md:text-4xl" style={{ color: '#1a3050' }}>
@@ -464,7 +282,6 @@ export default function Home() {
             <p className="text-base leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
               Dr. Brajmadhuri founded and runs TruVet. She conducts every consultation personally. When you bring your pet here, you know exactly who will be in that room with them.
             </p>
-
             <ul className="flex flex-col gap-3 mt-1">
               {[
                 'Modern hygienic facility, calm and stress-free for pets',
@@ -474,40 +291,25 @@ export default function Home() {
                 'In-clinic pet food, treats and accessories',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span
-                    className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs font-bold"
-                    style={{ backgroundColor: '#b7d9ee', color: '#1a3050' }}
-                  >
+                  <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style={{ backgroundColor: '#b7d9ee', color: '#1a3050' }}>
                     ✓
                   </span>
-                  <span className="text-sm leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-                    {item}
-                  </span>
+                  <span className="text-sm leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>{item}</span>
                 </li>
               ))}
             </ul>
-
             <a
               href="/about/"
-              className="self-start mt-2 inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold text-white transition-colors"
-              style={{ backgroundColor: '#d94f1e' }}
-              onMouseOver={e => (e.currentTarget.style.backgroundColor = '#b8401a')}
-              onMouseOut={e => (e.currentTarget.style.backgroundColor = '#d94f1e')}
+              className="cta-btn self-start mt-2 inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold text-white"
             >
               Meet Dr. Brajmadhuri
             </a>
           </div>
 
-          {/* Right: placeholder image */}
           <div className="flex-1 flex items-start">
             <div
               className="w-full rounded-xl aspect-[4/3] flex items-center justify-center text-sm"
-              style={{
-                border: '1px solid rgba(0,0,0,0.08)',
-                backgroundColor: '#ffffff',
-                color: '#6b7280',
-                fontWeight: 300,
-              }}
+              style={{ border: '1px solid rgba(0,0,0,0.08)', backgroundColor: '#ffffff', color: '#6b7280', fontWeight: 300 }}
             >
               Clinic photo coming soon
             </div>
@@ -519,10 +321,7 @@ export default function Home() {
       <section className="bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
           <div className="flex flex-col items-center text-center gap-4 mb-12">
-            <span
-              className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-              style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}
-            >
+            <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}>
               Find Us
             </span>
             <h2 className="text-3xl md:text-4xl" style={{ color: '#1a3050' }}>
@@ -549,24 +348,13 @@ export default function Home() {
                 { icon: '🕙', label: 'Hours', value: 'All 7 days, 10am to 8pm' },
                 { icon: '📸', label: 'Instagram', value: '@truvetpetcare_gurugram' },
               ].map((item) => (
-                <div
-                  key={item.label}
-                  className="flex items-start gap-3 p-4 rounded-lg"
-                  style={{ border: '1px solid rgba(0,0,0,0.07)' }}
-                >
-                  <div
-                    className="w-9 h-9 flex-shrink-0 rounded-lg flex items-center justify-center text-base"
-                    style={{ backgroundColor: '#b7d9ee' }}
-                  >
+                <div key={item.label} className="flex items-start gap-3 p-4 rounded-lg" style={{ border: '1px solid rgba(0,0,0,0.07)' }}>
+                  <div className="w-9 h-9 flex-shrink-0 rounded-lg flex items-center justify-center text-base" style={{ backgroundColor: '#b7d9ee' }}>
                     {item.icon}
                   </div>
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: '#1a3050' }}>
-                      {item.label}
-                    </p>
-                    <p className="text-sm leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-                      {item.value}
-                    </p>
+                    <p className="text-xs font-semibold uppercase tracking-wide mb-0.5" style={{ color: '#1a3050' }}>{item.label}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>{item.value}</p>
                   </div>
                 </div>
               ))}
@@ -577,10 +365,7 @@ export default function Home() {
                 href="https://wa.me/919871010355"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-white transition-colors"
-                style={{ backgroundColor: '#d94f1e' }}
-                onMouseOver={e => (e.currentTarget.style.backgroundColor = '#b8401a')}
-                onMouseOut={e => (e.currentTarget.style.backgroundColor = '#d94f1e')}
+                className="cta-btn inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-white"
               >
                 Book on WhatsApp
               </a>
@@ -593,10 +378,7 @@ export default function Home() {
       <section style={{ backgroundColor: '#fdf0e8' }}>
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-16 md:py-20">
           <div className="flex flex-col items-center text-center gap-4 mb-10">
-            <span
-              className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-              style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}
-            >
+            <span className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full" style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}>
               Common Questions
             </span>
             <h2 className="text-3xl md:text-4xl" style={{ color: '#1a3050' }}>
@@ -604,36 +386,7 @@ export default function Home() {
               <em style={{ color: '#d94f1e', fontStyle: 'italic' }}>questions.</em>
             </h2>
           </div>
-
-          <div className="flex flex-col gap-3">
-            {faqs.map((faq) => (
-              <details
-                key={faq.q}
-                className="group rounded-lg bg-white"
-                style={{ border: '1px solid rgba(0,0,0,0.07)' }}
-              >
-                <style>{`
-                  details > summary { list-style: none; }
-                  details[open] .faq-icon::after { content: '×'; }
-                  details:not([open]) .faq-icon::after { content: '+'; }
-                `}</style>
-                <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer">
-                  <span className="text-sm font-semibold leading-snug" style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}>
-                    {faq.q}
-                  </span>
-                  <span
-                    className="faq-icon flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full text-base font-bold transition-transform"
-                    style={{ backgroundColor: 'rgba(217,79,30,0.08)', color: '#d94f1e' }}
-                  />
-                </summary>
-                <div className="px-5 pb-5">
-                  <p className="text-sm leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-                    {faq.a}
-                  </p>
-                </div>
-              </details>
-            ))}
-          </div>
+          <FAQAccordion />
         </div>
       </section>
 
