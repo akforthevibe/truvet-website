@@ -14,9 +14,7 @@ export const postType = defineType({
     defineField({
       name: 'slug',
       type: 'slug',
-      options: {
-        source: 'title',
-      },
+      options: { source: 'title' },
     }),
     defineField({
       name: 'author',
@@ -26,16 +24,10 @@ export const postType = defineType({
     defineField({
       name: 'mainImage',
       type: 'image',
-      options: {
-        hotspot: true,
-      },
+      options: { hotspot: true },
       fields: [
-        defineField({
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative text',
-        })
-      ]
+        defineField({ name: 'alt', type: 'string', title: 'Alternative text' }),
+      ],
     }),
     defineField({
       name: 'categories',
@@ -47,8 +39,31 @@ export const postType = defineType({
       type: 'datetime',
     }),
     defineField({
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'text',
+      rows: 3,
+      description: 'Short summary shown on the blog index and in search results.',
+    }),
+    defineField({
       name: 'body',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'faqs',
+      title: 'FAQs',
+      type: 'array',
+      description: 'Optional FAQ section shown at the bottom of this post.',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          fields: [
+            defineField({ name: 'question', type: 'string', title: 'Question' }),
+            defineField({ name: 'answer', type: 'text', title: 'Answer', rows: 3 }),
+          ],
+          preview: { select: { title: 'question' } },
+        }),
+      ],
     }),
   ],
   preview: {
