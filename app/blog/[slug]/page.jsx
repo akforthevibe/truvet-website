@@ -7,9 +7,11 @@ import { allSlugsQuery, postBySlugQuery, recentPostsQuery } from '@/sanity/lib/q
 import PostFAQAccordion from '@/components/PostFAQAccordion';
 import ClinicStatus from '@/components/ClinicStatus';
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  const slugs = await client.fetch(allSlugsQuery).catch(() => []);
-  return slugs.map((s) => ({ slug: s.slug }));
+  const slugs = await client.fetch(`*[_type == "post"]{ "slug": slug.current }`).catch(() => []);
+  return slugs.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }) {
