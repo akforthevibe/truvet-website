@@ -19,6 +19,7 @@ const outfit = Outfit({
 export const metadata = {
   title: 'TruVet Pet Care Clinic | Sector 79, Gurugram',
   description: 'Veterinary clinic for dogs and cats in Sector 79, Gurugram. Open all 7 days, 10am to 8pm.',
+  icons: { icon: '/favicon.png' },
 };
 
 export default function RootLayout({ children }) {

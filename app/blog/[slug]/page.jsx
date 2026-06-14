@@ -5,6 +5,7 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 import { allSlugsQuery, postBySlugQuery, recentPostsQuery } from '@/sanity/lib/queries';
 import PostFAQAccordion from '@/components/PostFAQAccordion';
+import ClinicStatus from '@/components/ClinicStatus';
 
 export async function generateStaticParams() {
   const slugs = await client.fetch(allSlugsQuery).catch(() => []);
@@ -274,13 +275,7 @@ export default async function BlogPostPage({ params }) {
                 className="rounded-lg p-5 flex flex-col gap-3"
                 style={{ border: '1px solid rgba(0,0,0,0.07)', backgroundColor: '#ffffff' }}
               >
-                <div className="flex items-center gap-2">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: '#22c55e' }} />
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: '#22c55e' }} />
-                  </span>
-                  <span className="text-xs font-semibold" style={{ color: '#22c55e' }}>Open Now 10AM to 8PM</span>
-                </div>
+                <ClinicStatus size="xs" />
                 <p className="text-sm font-semibold" style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}>
                   TruVet Pet Care Clinic
                 </p>

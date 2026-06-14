@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import MapEmbed from '@/components/MapEmbed';
+import ClinicStatus from '@/components/ClinicStatus';
 
 export const metadata = {
   title: 'Location and Contact | TruVet Pet Care Clinic, Sector 79 Gurugram',
@@ -272,16 +273,7 @@ export default function LocationPage() {
                 Walk-in OPD consultations are welcome at any time during clinic hours. No appointment needed.
               </p>
 
-              <div className="flex items-center gap-2">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span
-                    className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-                    style={{ backgroundColor: '#22c55e' }}
-                  />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: '#22c55e' }} />
-                </span>
-                <span className="text-sm font-semibold" style={{ color: '#22c55e' }}>Open Now</span>
-              </div>
+              <ClinicStatus />
             </div>
 
             {/* Right: Contact */}

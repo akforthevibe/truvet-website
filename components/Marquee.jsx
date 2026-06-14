@@ -1,7 +1,7 @@
 'use client';
 
 const items = [
-  'Licensed Veterinary Clinic',
+  'Professional Veterinary Clinic',
   'Monday to Sunday, 10AM to 8PM',
   'Dogs and Cats Primary',
   'Sector 79, Gurugram',

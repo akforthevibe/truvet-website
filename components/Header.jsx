@@ -20,9 +20,10 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-lg font-bold leading-tight"
+          className="flex items-center gap-2 text-lg font-bold leading-tight"
           style={{ color: '#1A5276' }}
         >
+          <img src="/logo.png" alt="TruVet Pet Care Clinic" style={{ height: '36px', width: 'auto' }} />
           TruVet Pet Care Clinic
         </Link>
 

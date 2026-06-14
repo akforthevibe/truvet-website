@@ -1,5 +1,6 @@
 import Marquee from '@/components/Marquee';
 import FAQAccordion from '@/components/FAQAccordion';
+import ClinicStatus from '@/components/ClinicStatus';
 
 export const metadata = {
   title: 'Pet Clinic in Sector 79 Gurugram | TruVet Pet Care Clinic',
@@ -137,13 +138,7 @@ export default function Home() {
               className="rounded-xl p-6 flex flex-col gap-4"
               style={{ border: '1px solid rgba(0,0,0,0.07)', backgroundColor: '#ffffff', boxShadow: '0 4px 24px rgba(26,48,80,0.07)' }}
             >
-              <div className="flex items-center gap-2">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: '#22c55e' }} />
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: '#22c55e' }} />
-                </span>
-                <span className="text-xs font-semibold" style={{ color: '#22c55e' }}>Open Now 10AM to 8PM</span>
-              </div>
+              <ClinicStatus size="xs" />
               <div>
                 <p className="font-semibold text-base" style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}>
                   TruVet Pet Care Clinic
