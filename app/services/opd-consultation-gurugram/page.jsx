@@ -16,7 +16,7 @@ const jsonLd = {
       telephone: '+919871010355',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Shop No 4-6, Opp. Bestech Park View Altura, Sector 79, Naurangpur',
+        streetAddress: 'Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur',
         addressLocality: 'Gurugram',
         addressRegion: 'Haryana',
         postalCode: '122051',
@@ -159,7 +159,7 @@ export default function OPDConsultationPage() {
       {/* GEO */}
       <section className="bg-white border-t border-gray-100">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10 text-center">
-          <p className="text-xs leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>TruVet Pet Care Clinic is a veterinary clinic at Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. The clinic is run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.</p>
+          <p className="text-xs leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>TruVet Pet Care Clinic is a veterinary clinic at <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. The clinic is run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.</p>
         </div>
       </section>
     </>

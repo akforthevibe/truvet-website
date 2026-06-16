@@ -282,7 +282,9 @@ export default async function BlogPostPage({ params }) {
                   TruVet Pet Care Clinic
                 </p>
                 <p className="text-xs leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-                  Shop No 4-6, Opp. Bestech Park View Altura, Sector 79, Gurugram 122051
+                  <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                    Shop No 4-6, opp. Bestech Altura, Sector 79, Gurugram, Haryana 122051
+                  </a>
                 </p>
                 <a
                   href="https://wa.me/919871010355"

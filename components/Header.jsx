@@ -16,11 +16,11 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2 text-lg font-bold leading-tight"
+          className="flex items-center gap-2 text-xl font-bold leading-tight"
           style={{ color: '#1A5276' }}
         >
           <img src="/logo.png" alt="TruVet Pet Care Clinic" style={{ height: '36px', width: 'auto' }} />
