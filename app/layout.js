@@ -32,6 +32,11 @@ export default function RootLayout({ children }) {
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+      <script
+        src="https://koko.vet/widgets/booking/v1/chatbot.js"
+            koko-clinic-id="dHJ1dmV0"
+                async
+                  ></script>
         </body>
     </html>
   );
