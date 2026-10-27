@@ -304,12 +304,13 @@ export default function Home() {
           </div>
 
           <div className="flex-1 flex items-start">
-            <div
-              className="w-full rounded-xl aspect-[4/3] flex items-center justify-center text-sm"
-              style={{ border: '1px solid rgba(0,0,0,0.08)', backgroundColor: '#ffffff', color: '#6b7280', fontWeight: 300 }}
-            >
-              Clinic photo coming soon
-            </div>
+            <img
+              src="/truvet-clinic.jpg"
+              alt="TruVet Pet Care Clinic shopfront, Sector 79, Gurugram"
+              className="w-full rounded-xl aspect-[4/3] object-cover"
+              style={{ objectPosition: 'center 60%', border: '1px solid rgba(0,0,0,0.08)' }}
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

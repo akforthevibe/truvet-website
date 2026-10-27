@@ -105,20 +105,15 @@ export default function AboutPage() {
       <section style={{ backgroundColor: '#fdf0e8' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20 flex flex-col md:flex-row gap-12 md:gap-16 items-start">
 
-          {/* Left: photo placeholder */}
+          {/* Left: doctor photo */}
           <div className="w-full md:w-80 flex-shrink-0">
             <div className="relative">
-              <div
-                className="w-full rounded-xl flex flex-col items-center justify-center gap-2"
-                style={{
-                  height: '420px',
-                  border: '1px solid rgba(0,0,0,0.07)',
-                  backgroundColor: 'rgba(183,217,238,0.20)',
-                }}
-              >
-                <span className="text-sm" style={{ color: '#6b7280', fontWeight: 400 }}>Dr. Brajmadhuri</span>
-                <span className="text-xs" style={{ color: '#6b7280', fontWeight: 300 }}>Photo coming soon</span>
-              </div>
+              <img
+                src="/dr-brajmadhuri.jpg"
+                alt="Dr. Brajmadhuri, veterinarian at TruVet Pet Care Clinic"
+                className="w-full aspect-square rounded-full object-cover"
+                style={{ border: '4px solid #ffffff', boxShadow: '0 4px 20px rgba(0,0,0,0.08)' }}
+              />
               <span
                 className="absolute bottom-4 right-4 text-xs font-bold text-white px-3 py-1.5 rounded-lg"
                 style={{ backgroundColor: '#d94f1e' }}
@@ -252,20 +247,15 @@ export default function AboutPage() {
             </ul>
           </div>
 
-          {/* Right: photo placeholder */}
+          {/* Right: clinic photo */}
           <div className="w-full md:w-96 flex-shrink-0">
-            <div
-              className="w-full rounded-xl flex items-center justify-center text-sm"
-              style={{
-                height: '400px',
-                border: '1px solid rgba(0,0,0,0.07)',
-                backgroundColor: 'rgba(183,217,238,0.20)',
-                color: '#6b7280',
-                fontWeight: 300,
-              }}
-            >
-              Clinic photo coming soon
-            </div>
+            <img
+              src="/truvet-clinic.jpg"
+              alt="TruVet Pet Care Clinic shopfront, Sector 79, Gurugram"
+              className="w-full rounded-xl object-cover"
+              style={{ height: '400px', objectPosition: 'center 60%', border: '1px solid rgba(0,0,0,0.07)' }}
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
