@@ -30,7 +30,7 @@ export default function MapEmbed() {
 
       <div className="flex justify-center mt-6">
         <a
-          href="https://www.google.com/maps/dir/?api=1&destination=28.3974,77.0263&travelmode=driving"
+          href="https://share.google/iKD2EWUVRf7EVe5uU"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-btn inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-white"

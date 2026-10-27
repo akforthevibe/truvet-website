@@ -18,9 +18,25 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = await client.fetch(postBySlugQuery, { slug }).catch(() => null);
   if (!post) return {};
+  const description = post.excerpt || `${post.title} - TruVet Pet Care Clinic, Sector 79 Gurugram.`;
+  const image = post.mainImage?.asset
+    ? urlFor(post.mainImage).width(1200).height(630).fit('crop').url()
+    : '/og-image.jpg';
   return {
     title: `${post.title} | TruVet Pet Care Clinic`,
-    description: post.excerpt || `${post.title} - TruVet Pet Care Clinic, Sector 79 Gurugram.`,
+    description,
+    alternates: { canonical: `/blog/${slug}/` },
+    openGraph: {
+      type: 'article',
+      siteName: 'TruVet Pet Care Clinic',
+      locale: 'en_IN',
+      url: `/blog/${slug}/`,
+      title: post.title,
+      description,
+      publishedTime: post.publishedAt,
+      images: [{ url: image, width: 1200, height: 630, alt: post.mainImage?.alt || post.title }],
+    },
+    twitter: { card: 'summary_large_image', title: post.title, description, images: [image] },
   };
 }
 
@@ -33,8 +49,14 @@ function formatDate(iso) {
   });
 }
 
-const portableComponents = {
+const getPortableComponents = (postTitle) => ({
   block: {
+    // The post title is the page's only H1, so headings written as H1 in Sanity render as H2
+    h1: ({ children }) => (
+      <h2 className="text-2xl md:text-3xl mt-10 mb-4 leading-snug" style={{ color: '#1a3050', fontFamily: 'Playfair Display, serif' }}>
+        {children}
+      </h2>
+    ),
     normal: ({ children }) => (
       <p className="text-base leading-relaxed mb-5" style={{ color: '#6b7280', fontWeight: 300 }}>
         {children}
@@ -108,7 +130,7 @@ const portableComponents = {
         <figure className="my-8">
           <img
             src={urlFor(value).width(960).fit('max').url()}
-            alt={value.alt || ''}
+            alt={value.alt || postTitle}
             className="w-full rounded-lg"
             style={{ boxShadow: '0 4px 20px rgba(26,48,80,0.08)' }}
             loading="lazy"
@@ -122,7 +144,7 @@ const portableComponents = {
       );
     },
   },
-};
+});
 
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
@@ -223,7 +245,7 @@ export default async function BlogPostPage({ params }) {
               )}
 
               {post.body && (
-                <PortableText value={post.body} components={portableComponents} />
+                <PortableText value={post.body} components={getPortableComponents(post.title)} />
               )}
 
               {/* FAQs */}
@@ -282,8 +304,8 @@ export default async function BlogPostPage({ params }) {
                   TruVet Pet Care Clinic
                 </p>
                 <p className="text-xs leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-                  <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                    Shop No 4-6, opp. Bestech Altura, Sector 79, Gurugram, Haryana 122051
+                  <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                    Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Gurugram, Haryana 122051
                   </a>
                 </p>
                 <a

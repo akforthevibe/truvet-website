@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/about/' },
   title: 'About Dr. Brajmadhuri | TruVet Pet Care Clinic, Sector 79 Gurugram',
   description:
     'TruVet Pet Care Clinic is founded and run by Dr. Brajmadhuri, BVSc. Every consultation is conducted personally by Dr. Brajmadhuri. No junior vets, no rotating staff.',
@@ -14,7 +15,7 @@ const jsonLd = {
       name: 'TruVet Pet Care Clinic',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur',
+        streetAddress: 'Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur',
         addressLocality: 'Gurugram',
         addressRegion: 'Haryana',
         postalCode: '122051',
@@ -30,7 +31,7 @@ const jsonLd = {
         sameAs: 'https://www.linkedin.com/in/dr-brajmadhuri-8b31b017/',
       },
       sameAs: [
-        'https://share.google/SbFhEnNlFDiO15KgU',
+        'https://share.google/iKD2EWUVRf7EVe5uU',
         'https://www.instagram.com/truvetpetcare_gurugram/',
         'https://www.linkedin.com/company/truvet-pet-care-clinic/',
       ],
@@ -219,7 +220,7 @@ export default function AboutPage() {
               <em style={{ color: '#d94f1e', fontStyle: 'italic' }}>for your pet.</em>
             </h2>
             <p className="text-base leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-              TruVet Pet Care Clinic is a modern, hygienic veterinary clinic at <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Altura, Sector 79, Gurugram</a>. The clinic was designed to be calm and stress-free for animals.
+              TruVet Pet Care Clinic is a modern, hygienic veterinary clinic at <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Gurugram</a>. The clinic was designed to be calm and stress-free for animals.
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
               We stock a curated selection of pet food, treats and accessories in-clinic. One stop for care and supplies.
@@ -335,7 +336,7 @@ export default function AboutPage() {
       <section className="bg-white border-t border-gray-100">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10 text-center">
           <p className="text-xs leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-            TruVet Pet Care Clinic is a veterinary clinic at <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. The clinic is founded and run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.
+            TruVet Pet Care Clinic is a veterinary clinic at <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. The clinic is founded and run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.
           </p>
         </div>
       </section>

@@ -3,6 +3,7 @@ import MapEmbed from '@/components/MapEmbed';
 import ClinicStatus from '@/components/ClinicStatus';
 
 export const metadata = {
+  alternates: { canonical: '/location/' },
   title: 'Location and Contact | TruVet Pet Care Clinic, Sector 79 Gurugram',
   description:
     'TruVet Pet Care Clinic is at Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Gurugram. Open all 7 days, 10am to 8pm. Get directions on Google Maps.',
@@ -14,7 +15,7 @@ const jsonLd = {
   name: 'TruVet Pet Care Clinic',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur',
+    streetAddress: 'Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur',
     addressLocality: 'Gurugram',
     addressRegion: 'Haryana',
     postalCode: '122051',
@@ -28,9 +29,9 @@ const jsonLd = {
   telephone: '+919871010355',
   openingHours: 'Mo-Su 10:00-20:00',
   url: 'https://truvet.in',
-  hasMap: 'https://share.google/SbFhEnNlFDiO15KgU',
+  hasMap: 'https://share.google/iKD2EWUVRf7EVe5uU',
   sameAs: [
-    'https://share.google/SbFhEnNlFDiO15KgU',
+    'https://share.google/iKD2EWUVRf7EVe5uU',
     'https://www.instagram.com/truvetpetcare_gurugram/',
   ],
 };
@@ -39,8 +40,8 @@ const quickInfo = [
   {
     icon: '📍',
     label: 'Address',
-    value: 'Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051',
-    href: 'https://share.google/i8QFvO5vme5YTtKLA',
+    value: 'Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051',
+    href: 'https://share.google/iKD2EWUVRf7EVe5uU',
   },
   {
     icon: '📞',
@@ -70,7 +71,7 @@ const howToReach = [
   },
   {
     icon: '🏢',
-    heading: 'From Bestech Altura Residents',
+    heading: 'From Bestech Park View Altura Residents',
     body: 'We are directly opposite your complex on the main road. Shop No 4-6. Walk-in welcome anytime from 10am to 8pm.',
   },
   {
@@ -120,15 +121,15 @@ export default function LocationPage() {
               Find Us
             </span>
             <h1 className="text-4xl md:text-5xl leading-tight" style={{ color: '#1a3050' }}>
-              Opposite Bestech Altura, Sector 79,{' '}
+              Opposite Bestech Park View Altura, Sector 79,{' '}
               <em style={{ color: '#d94f1e', fontStyle: 'italic' }}>Gurugram.</em>
             </h1>
             <p className="text-base leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-              <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. Open all 7 days, 10am to 8pm.
+              <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. Open all 7 days, 10am to 8pm.
             </p>
             <div className="mt-2">
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=9X4C%2B89+Gurugram+Haryana&travelmode=driving"
+                href="https://share.google/iKD2EWUVRf7EVe5uU"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-btn inline-flex items-center gap-2 px-6 py-3 rounded text-sm font-semibold text-white"
@@ -364,7 +365,7 @@ export default function LocationPage() {
       <section className="bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10 text-center">
           <p className="text-xs leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-            TruVet Pet Care Clinic is a veterinary clinic at <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. The clinic is run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.
+            TruVet Pet Care Clinic is a veterinary clinic at <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. The clinic is run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.
           </p>
         </div>
       </section>

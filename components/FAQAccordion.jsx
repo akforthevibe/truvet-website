@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: 'Where exactly is TruVet Pet Care Clinic?',
-    a: 'Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. Near Godrej Nature Plus, accessible from Sectors 80, 81, 82, 83, 85 and 88.',
+    a: 'Shop No 4-6, opposite Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. Near Godrej Nature Plus, accessible from Sectors 76, 77, 78, 79, 80 and 81.',
   },
 ];
 

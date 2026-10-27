@@ -4,6 +4,7 @@ import { urlFor } from '@/sanity/lib/image';
 import { allPostsQuery } from '@/sanity/lib/queries';
 
 export const metadata = {
+  alternates: { canonical: '/blog/' },
   title: 'Pet Care Blog | TruVet Pet Care Clinic, Sector 79 Gurugram',
   description:
     'Veterinary advice for dog and cat owners in Sector 79, Gurugram. Articles on vaccination, deworming, health checkups and more from Dr. Brajmadhuri at TruVet.',

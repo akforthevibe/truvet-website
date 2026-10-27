@@ -20,8 +20,8 @@ export default function Footer() {
           <div className="flex flex-col gap-2 max-w-xs">
             <span className="text-base font-bold">TruVet Pet Care Clinic</span>
             <address className="not-italic text-sm leading-relaxed" style={{ color: '#1A5276' }}>
-              <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
-                Shop No 4-6, opp. Bestech Altura,<br />
+              <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                Shop No 4-6, opp. Bestech Park View Altura,<br />
                 Sector 79, Naurangpur,<br />
                 Gurugram, Haryana 122051
               </a>

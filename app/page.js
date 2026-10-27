@@ -3,6 +3,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import ClinicStatus from '@/components/ClinicStatus';
 
 export const metadata = {
+  alternates: { canonical: '/' },
   title: 'Pet Clinic in Sector 79 Gurugram | TruVet Pet Care Clinic',
   description:
     'Veterinary care for dogs and cats in Sector 79, Gurugram. Open all 7 days, 10am to 8pm. Dr. Brajmadhuri sees every patient personally. Book on WhatsApp.',
@@ -18,7 +19,7 @@ const jsonLd = {
       telephone: '+919871010355',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur',
+        streetAddress: 'Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur',
         addressLocality: 'Gurugram',
         addressRegion: 'Haryana',
         postalCode: '122051',
@@ -26,7 +27,7 @@ const jsonLd = {
       },
       openingHours: 'Mo-Su 10:00-20:00',
       sameAs: [
-        'https://share.google/SbFhEnNlFDiO15KgU',
+        'https://share.google/iKD2EWUVRf7EVe5uU',
         'https://www.instagram.com/truvetpetcare_gurugram/',
         'https://www.linkedin.com/company/truvet-pet-care-clinic/',
       ],
@@ -62,7 +63,7 @@ const jsonLd = {
         {
           '@type': 'Question',
           name: 'Where exactly is TruVet Pet Care Clinic?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. Near Godrej Nature Plus, accessible from Sectors 76, 77, 78, 79, 80 and 81.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051. Near Godrej Nature Plus, accessible from Sectors 76, 77, 78, 79, 80 and 81.' },
         },
       ],
     },
@@ -144,8 +145,8 @@ export default function Home() {
                   TruVet Pet Care Clinic
                 </p>
                 <p className="text-sm mt-1 leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-                  <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                    Shop No 4-6, opp. Bestech Altura,<br />
+                  <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                    Shop No 4-6, opp. Bestech Park View Altura,<br />
                     Sector 79, Naurangpur, Gurugram, Haryana 122051
                   </a>
                 </p>
@@ -323,27 +324,27 @@ export default function Home() {
               Find Us
             </span>
             <h2 className="text-3xl md:text-4xl" style={{ color: '#1a3050' }}>
-              Opposite Bestech Altura,{' '}
+              Opposite Bestech Park View Altura,{' '}
               <em style={{ color: '#d94f1e', fontStyle: 'italic' }}>Sector 79, Gurugram.</em>
             </h2>
           </div>
 
           <div className="max-w-2xl mx-auto flex flex-col gap-6">
             <p className="text-base leading-relaxed text-center" style={{ color: '#6b7280', fontWeight: 300 }}>
-              <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051
+              <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051
               </a>
             </p>
             <p className="text-sm text-center font-medium" style={{ color: '#1a3050' }}>
               Open all 7 days, 10am to 8pm
             </p>
             <p className="text-sm text-center" style={{ color: '#6b7280', fontWeight: 300 }}>
-              Accessible from Godrej Nature Plus, Bestech Altura, and Sectors 76, 77, 78, 79, 80 and 81.
+              Accessible from Godrej Nature Plus, Bestech Park View Altura, and Sectors 76, 77, 78, 79, 80 and 81.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
               {[
-                { icon: '📍', label: 'Address', value: 'Shop No 4-6, opp. Bestech Altura, Sector 79, Gurugram, Haryana 122051', href: 'https://share.google/i8QFvO5vme5YTtKLA' },
+                { icon: '📍', label: 'Address', value: 'Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Gurugram, Haryana 122051', href: 'https://share.google/iKD2EWUVRf7EVe5uU' },
                 { icon: '📞', label: 'Phone', value: '+91 98710 10355' },
                 { icon: '🕙', label: 'Hours', value: 'All 7 days, 10am to 8pm' },
                 { icon: '📸', label: 'Instagram', value: '@truvetpetcare_gurugram' },
@@ -398,7 +399,7 @@ export default function Home() {
       <section className="bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10 text-center">
           <p className="text-xs leading-relaxed" style={{ color: '#6b7280', fontWeight: 300 }}>
-            TruVet Pet Care Clinic is a veterinary clinic at <a href="https://share.google/i8QFvO5vme5YTtKLA" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. The clinic is run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.
+            TruVet Pet Care Clinic is a veterinary clinic at <a href="https://share.google/iKD2EWUVRf7EVe5uU" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Shop No 4-6, opp. Bestech Park View Altura, Sector 79, Naurangpur, Gurugram, Haryana 122051</a>. The clinic is run by Dr. Brajmadhuri, who conducts all consultations personally. TruVet is open all seven days from 10am to 8pm and offers OPD consultation, vaccination, deworming, surgery and health checkups for dogs and cats. WhatsApp: +91 98710 10355.
           </p>
         </div>
       </section>
